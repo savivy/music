@@ -1,0 +1,39 @@
+
+.login{
+    width: 6.4rem;
+    height: 4.2rem;
+    border:0.02rem solid #999;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    
+}
+.login h1{
+    margin:.1rem auto;
+    height:0.6rem;
+    line-height:.6rem;
+}
+.login input{
+    margin:.15rem auto;
+    display: block;
+    width: 5rem;
+    height: .6rem;
+    border: .01rem solid #999;
+   
+}
+.login button{
+  
+    margin:.2rem auto;
+    width: 3rem;
+    height: .6rem;
+    line-height:.6rem;
+    background-color: #1890ff;
+    border-color: #1890ff;
+    color: #fff;
+    text-align: center;
+}

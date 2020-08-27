@@ -1,17 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
-
+import MapRoute from './routes/MaoRoute'
+import routes from './routes/routes'
+import {BrowserRouter,Switch,Route,Redirect} from 'react-router-dom'
+import axios from 'axios'
+// import './assets/public.css'
+import './assets/reset.css'
+import './assets/js/rem'
+React.Component.prototype.$http=axios
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+      <MapRoute routes={routes}>
+
+      </MapRoute>
+      {/* <Switch>
+        <Route path="/home" component={Home}></Route>
+        <Route path="/login" component={Login}></Route>
+        <Route path="/register" component={Register}></Route>
+        <Redirect path="/" to="/home"></Redirect>
+      </Switch> */}
+  </BrowserRouter>
+   
+ ,
   document.getElementById('root')
 );
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();

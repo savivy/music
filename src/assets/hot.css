@@ -1,0 +1,78 @@
+.hot {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner {
+    width: 100%;
+    height: 3.22rem;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+}
+
+.hot ul li {
+    width: 100%;
+
+}
+
+.hot ul li a {
+    display: flex;
+    width: 100%;
+    height: 1.1rem;
+}
+
+.num {
+    width: .88rem;
+    margin-left: .2rem;
+    font-size: .34rem;
+    align-items: center;
+    line-height: 1.1rem;
+}
+
+.player {
+    width: .44rem;
+    height: 100%;
+    padding: 0 .2rem;
+}
+
+.hot li:nth-child(1) a .num,
+.hot li:nth-child(2) a .num,
+.hot li:nth-child(3) a .num {
+    color: #df3436;
+}
+
+.hot li a .num {
+    color: #333;
+}
+
+.title {
+    padding: .12rem 0;
+}
+
+.title .mTitle {
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:1;
+    overflow: hidden;
+}
+
+.title div:nth-child(1) span {
+    font-size: .30rem;
+    color: #333;
+    line-height: .5rem;
+}
+
+.title div:nth-child(1) .alia {
+    color: #888;
+}
+
+.title .artist {
+    color: #888;
+    line-height: .38rem;
+}

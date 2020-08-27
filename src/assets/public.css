@@ -1,0 +1,22 @@
+
+
+html{
+    font-size: 100px;
+}
+html,body,#root {
+    width: 100%;
+    height: 100%;
+  }
+  .clearfix {
+    *zoom: 1;
+  }
+  .clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  #root{
+    max-width: 7.5rem;
+    margin: 0 auto;
+    min-width: 3.2rem;
+  }

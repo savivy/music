@@ -1,0 +1,60 @@
+.search {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    padding: .3rem .2rem;
+}
+
+.inputBox {
+    position: relative;
+    width: 100%;
+    height: .6rem;
+    padding: 0 .6rem;
+    box-sizing: border-box;
+    background: #ebecec;
+    border-radius: .6rem;
+}
+
+form input {
+    height: .6rem;
+}
+
+.main {
+    flex: 1;
+}
+
+.content {
+ 
+    padding: .3rem .2rem 0;
+}
+.content ul{
+    margin-top: .3rem;
+}
+.content h3 {
+    font-size: .24rem;
+    line-height: .24rem;
+    color: #666;
+}
+
+.content .sec {
+    display: inline-block;
+    height: .64rem;
+    margin-right: .16rem;
+    margin-bottom: .16rem;
+    padding: 0 .28rem;
+    line-height: .64rem;
+    border: 0.01rem solid ;
+    border-radius: 1.2rem;
+    border-color: #d3d4da;
+    border-width: 0 0.01rem;
+}
+.content .link{
+    display: block;
+    width: 100%;
+    color: #333;
+    font-size: .28rem;
+}
