@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import SongList from '../../componts/SongList'
 export default class Recommend extends Component {
   constructor() {
     super()
@@ -16,7 +16,7 @@ export default class Recommend extends Component {
       })
      })
      this.$http.get('/personalized/newsong').then((res) => {
-          console.log(res.data.result.song);
+          console.log(res.data.result);
           
       this.setState({
         nMusic: res.data.result,
@@ -47,27 +47,7 @@ export default class Recommend extends Component {
         </div>
         <div className="lastest">
           <h2>最新音乐</h2>
-          <ul>
-              {
-                nMusic.map((item,index)=>{
-                  return <li key={index}>
-                        <div>
-                        <h3>{item.name}</h3>
-                     <div className="artists ">
-                       <b>*</b>
-                       { item.song.artists.map((val,i)=>{
-                            return val.name
-                        }).join(" / ")}
-                        <s>---</s><i>{item.name}</i>
-                     </div>
-                        </div>
-                        <div className="palyer">
-                           
-                        </div>
-                  </li>
-                })
-              }
-          </ul>
+            <SongList SongList={nMusic}></SongList>
         </div>
       </div>
     )

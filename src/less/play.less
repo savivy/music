@@ -1,0 +1,107 @@
+.play {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+
+    .bg {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .changbi {
+        background: url('https://s3.music.126.net/mobile-new/img/needle-ip6.png?be4ebbeb6befadfcae75ce174e7db862=') no-repeat center center;
+        position: fixed;
+        background-size: 1.92rem 2.74rem;
+        top: 0;
+        left: 50%;
+        width: 1.92rem;
+        height: 2.74rem;
+        z-index: 999;
+    }
+
+    .disc {
+        background: url('https://s3.music.126.net/mobile-new/img/disc-ip6.png?69796123ad7cfe95781ea38aac8f2d48=') no-repeat center center;
+        background-size: 5.92rem 5.92rem;
+        width: 5.92rem;
+        height: 5.92rem;
+        position: fixed;
+        top: 1.2rem;
+        left: 50%;
+        margin-left: -2.96rem;
+        animation: rotate 20s liner infinite;
+
+        &.stop {
+            animation-play-state: paused;
+        }
+
+        .img-box {
+            margin: 0 auto;
+            margin-top: 50px;
+            width: 3.92rem;
+            height: 3.92rem;
+            border-radius: 50%;
+            overflow: hidden;
+
+            img {
+                width: 3.92rem;
+                height: 3.92rem;
+            }
+        }
+    }
+
+    .auto-play {
+        position: absolute;
+        top: 33%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .iconfont {
+            color: #fff;
+            font-size: 1.2rem;
+        }
+    }
+
+    .lyric {
+        position: absolute;
+        top: 8rem;
+        width: 5.5rem;
+        height: 1.2rem;
+        left: 1.2rem;
+        overflow: hidden;
+
+        ul {
+            width: 100%;
+            transition: margin-top 0.3s;
+
+            li {
+                list-style: none;
+                text-align: center;
+                color: rgba(255, 255, 255, 0.5);
+                height: .6rem;
+                line-height: .6rem;
+                font-size: .34rem;
+                overflow : hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+
+                &.active {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
